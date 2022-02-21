@@ -10,5 +10,5 @@ modules:
     - exercises/04-delete-packages
     - exercises/05-cluster-create
     - exercises/06-cluster-delete
-    - exercises/07-Cleanup
+    - exercises/07-TMC-API
     - workshop-summary
