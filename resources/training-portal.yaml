@@ -10,10 +10,10 @@ spec:
     credentials:
       admin:
         username: admin
-        password: Newstart@1
+        password: "Newstart@1"
       robot:
         username: robot-user
-        password: Welcome11!
+        password: "Welcome11!"
   workshops:
   - name: partnerdemo
     capacity: 10
