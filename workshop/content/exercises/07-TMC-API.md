@@ -1,4 +1,4 @@
-In this section, lets explore few rest API's. you can find complete list of API's ref in
+In this section, lets explore few rest API's. you can find complete list of API's ref in:
 
 ```dashboard:open-url
 https://developer.vmware.com/apis/897/tanzu-mission-control
@@ -6,13 +6,15 @@ https://developer.vmware.com/apis/897/tanzu-mission-control
 
 #### fetch API Token: 
 
+###### Replace <replace me with TMC API Token> with API Token collected in TMC section 
+
 ```execute
-refresh_token=
+refresh_token=<replace me with TMC API Token>
 ```
 ##### Generate Access token from above Refresh Token
 
 ```execute
-access_token=$(curl -d 'refresh_token=$refresh_token' https://console.cloud.vmware.com/csp/gateway/am/api/auth/api-tokens/authorize | jq -r '.access_token')
+access_token=$(curl -d "refresh_token=$refresh_token" https://console.cloud.vmware.com/csp/gateway/am/api/auth/api-tokens/authorize | jq -r '.access_token')
 ```
 
 ##### Read the Access Token
@@ -45,10 +47,14 @@ curl -v 'searchScope.name=*' https://partnertanzuseamericas.tmc.cloud.vmware.com
 curl -s 'searchScope.name=*' https://partnertanzuseamericas.tmc.cloud.vmware.com/v1alpha1/clusters -H "Authorization: Bearer $access_token" | jq '.clusters[].fullName.name'
 ```
 
+##### Get the management clusters 
+
+```execute
+curl -s 'searchScope.name=*' https://partnertanzuseamericas.tmc.cloud.vmware.com/v1alpha1/managementclusters -H "Authorization: Bearer $access_token" | jq '.managementClusters[].fullName.name'
+```
+
 ##### Delete the cluster group {{ session_namespace }}-cg that is created earlier: 
 
 ```execute
 curl -v 'searchScope.name=*' https://partnertanzuseamericas.tmc.cloud.vmware.com/v1alpha1/clustergroups -H "Authorization: Bearer $access_token"
 ```
-
-
