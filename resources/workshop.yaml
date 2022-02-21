@@ -1,17 +1,17 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-lc-helloworld
+  name: partnerdemo
 spec:
-  title: Hello from Eknath
+  title: Hello, Welcome to Workshop
   description: Workshop created to demo the workload creation in TKG
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/Eknathreddy09/lab-lc-helloworld
+  url: https://github.com/Eknathreddy09/partnerdemo-custom
   content:
-     files: github.com/Eknathreddy09/lab-lc-helloworld?ref=main
-     image: docker.io/eknath009/lcimagewithoutaz:newest
+     files: github.com/Eknathreddy09/partnerdemo-custom?ref=main
+     image: docker.io/eknath009/partnerdemo:newest
   session:
     namespaces:
       budget: small
