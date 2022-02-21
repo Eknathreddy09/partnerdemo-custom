@@ -7,15 +7,13 @@ spec:
     registration:
       type: one-step
       enabled: false
-    #@ if data.values.eduk8s:
     credentials:
       admin:
         username: admin
-        password: #@ data.values.eduk8s.adminPassword
+        password: Newstart@1
       robot:
         username: robot-user
-        password: #@ data.values.eduk8s.robotPassword
-    #@ end
+        password: Welcome11!
   workshops:
   - name: partnerdemo
     capacity: 10
