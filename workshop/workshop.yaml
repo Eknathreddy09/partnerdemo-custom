@@ -11,4 +11,5 @@ modules:
     - exercises/05-cluster-create
     - exercises/06-cluster-delete
     - exercises/07-TMC-API
+    - exercises/08-TMC-Terraform
     - workshop-summary
