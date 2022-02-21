@@ -19,6 +19,8 @@ modules:
         name: TMC Cluster Delete
     exercises/07-TMC-API:
         name: TMC API
+    exercises/08-TMC-Terraform: 
+        name: TMC Terraform
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
