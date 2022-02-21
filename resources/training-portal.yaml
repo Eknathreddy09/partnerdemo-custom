@@ -1,7 +1,7 @@
 apiVersion: training.eduk8s.io/v1alpha1
 kind: TrainingPortal
 metadata:
-  name: partnerse
+  name: partnerdemo
 spec:
   portal:
     registration:
@@ -17,7 +17,7 @@ spec:
         password: #@ data.values.eduk8s.robotPassword
     #@ end
   workshops:
-  - name: lab-lc-helloworld
+  - name: partnerdemo
     capacity: 10
     expires: 120m
     orphaned: 5m
