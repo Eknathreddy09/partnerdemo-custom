@@ -17,8 +17,8 @@ modules:
         name: TMC Cluster Create
     exercises/06-cluster-delete:
         name: TMC Cluster Delete
-    exercises/07-Cleanup:
-        name: Clean Up
+    exercises/07-TMC-API:
+        name: TMC API
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
