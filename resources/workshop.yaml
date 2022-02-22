@@ -11,7 +11,7 @@ spec:
   url: https://github.com/Eknathreddy09/partnerdemo-custom
   content:
      files: github.com/Eknathreddy09/partnerdemo-custom?ref=main
-     image: docker.io/eknath009/partnerdemo:newest
+     image: docker.io/eknath009/partnerdemo-custom:new
   session:
     namespaces:
       budget: small
